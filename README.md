@@ -6,24 +6,38 @@ This project aims to predict multiple water quality parameters using machine lea
 
 ## Overview
 
-Access to clean water is a critical global concern. Accurate prediction of various water quality metrics can help in early detection of pollution and ensure timely intervention.
+Access to clean water is a critical global concern. This solution provides:
 
-In this project, I:
+- Real-time prediction of 9 key water quality parameters
+- Safety assessment against human and aquatic life thresholds
+- Early pollution detection for timely intervention
 
-- Collected and preprocessed real-world water quality datasets
-- Used supervised machine learning for multi-target regression
-- Built a pipeline using `MultiOutputRegressor` with `RandomForestRegressor`
-- Evaluated the model using appropriate regression metrics
+Key project components:
+- Data collection & preprocessing of real-world water quality datasets
+- Multi-target regression using supervised ML
+- Model pipeline with `MultiOutputRegressor(RandomForestRegressor())`
+- Comprehensive model evaluation
+- Deployment via Streamlit web interface
 
+---
+
+## Features
+
+- **Multi-parameter prediction**: Simultaneously estimates levels of 9 pollutants
+- **Safety evaluation**: Compares results against human/fish safety thresholds
+- **User-friendly interface**: Simple inputs (year & station ID) generate detailed reports
+- **Visual alerts**: Clear indicators for unsafe conditions
 ---
 
 ## Technologies Used
 
-- **Python 3.12**
-- **Pandas, NumPy** – Data handling
-- **Scikit-learn** – Machine learning model and evaluation
+- **Python 3.12** - Core language
+- **Pandas, NumPy** – Data handling and preprocessing
+- **Scikit-learn** – Machine learning implementation
 - **Matplotlib, Seaborn** – Data visualization
-- **Jupyter Notebook** – Interactive experimentation
+- **Joblib** – Model persistence
+- **Streamlit** – Web application deployment
+- **Jupyter Notebook** – Interactive development
 
 ---
 
@@ -33,7 +47,7 @@ The model predicts multiple water quality parameters such as:
 
 - NH4
 - BOD5 (BSK5)
-- Colloids
+- Suspended (Colloids)
 - O2, NO3, NO2, SO4, PO4 and CL
 ---
 
